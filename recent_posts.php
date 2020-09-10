@@ -4,4 +4,5 @@ $HyperlinkArray = array(
   array("/2019/04/29/hello-world/","Hello World"),
   array("/2019/04/29/hello-world/","testtt")
 );
+echo "a";
 ?>
