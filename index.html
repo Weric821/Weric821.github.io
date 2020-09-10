@@ -172,9 +172,10 @@
     <div class="widget">
       <ul>
           <?php
-          include '/recent_posts.php';
-          for ($row = 0; $row < 3; $row++) 
-              echo "<li><a href=".$HyperlinkArray[$row][0].">".$HyperlinkArray[$row][1]."</li>";
+            include '/recent_posts.php';
+            for ($row = 0; $row < 3; $row++)
+            {
+                echo "<li><a href=".$HyperlinkArray[$row][0].">".$HyperlinkArray[$row][1]."</li>";
             }
           ?>
       </ul>
