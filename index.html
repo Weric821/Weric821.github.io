@@ -175,7 +175,12 @@
             include './recent_posts.php';
             for ($row = 0; $row < 3; $row++)
             {
-                echo ("<li><a href='".$HyperlinkArray[0][0]."'>".$HyperlinkArray[0][1]."</li>");
+                     echo ("<li><a href='");
+                     echo("$HyperlinkArray[0][0]");
+                     echo("'>").."</li>");
+                     echo("$HyperlinkArray[0][1]");
+                     echo("</li>");
+<!--                 echo ("<li><a href='".$HyperlinkArray[0][0]."'>".$HyperlinkArray[0][1]."</li>"); -->
 <!--                 echo ("<li><a href='https://analyticsindiamag.com/how-to-implement-convolutional-autoencoder-in-pytorch-with-cuda/'>"."a"."</li>") -->
             }
           ?>
