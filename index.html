@@ -171,14 +171,12 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
-          <li>
-            <a href="/2019/04/29/article-title/">article title</a>
-          </li>
-        
-          <li>
-            <a href="/2019/04/29/hello-world/">Hello World</a>
-          </li>
-
+          <?php
+          include '/recent_posts.php';
+          for ($row = 0; $row < 3; $row++) 
+              echo "<li><a href=".$HyperlinkArray[$row][0].">".$HyperlinkArray[$row][1]."</li>";
+            }
+          ?>
       </ul>
     </div>
   </div>
