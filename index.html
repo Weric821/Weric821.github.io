@@ -167,13 +167,15 @@
 
 
 
-  <link rel="import" href="./recent_posts.html" id="page1">
- <script type="text/javascript">
-    document.write(page1.import.body.innerHTML);
-</script>
+  
+ <div id="page1"></div>
+    <script>
+          $("#page1").load("./recent_posts.html");
+    </script>
 
 
-  <!--<div class="widget-wrap">
+  <!--<link rel="import" href="./recent_posts.html" id="page1">
+<div class="widget-wrap">
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
        
